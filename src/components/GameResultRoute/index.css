@@ -1,0 +1,88 @@
+.results-container {
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 85%;
+  max-height: 798px;
+  width: 90%;
+  max-width: 1146px;
+  font-family: 'Roboto';
+}
+.congrats-background {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/quiz-game-congrats-card-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background {
+  flex-grow: 1;
+  background-image: linear-gradient(
+    to right,
+    #dbbcc4,
+    #f3dfd8,
+    #c4d8bf,
+    #b7b1d5
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.result {
+  padding: 20px;
+  text-align: center;
+}
+
+.lose-image {
+  width: 410px;
+  height: 307px;
+}
+.won-image {
+  width: 174px;
+  height: 174px;
+}
+h1 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.correct-percentage,
+congrats-text {
+  color: #0ea5e9;
+  font-family: 'Roboto';
+  font-size: 27px;
+  font-weight: bold;
+}
+.congrats-text {
+  color: #334155;
+}
+
+.report-button {
+  background-color: #0a74da;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.report-button:hover {
+  background-color: #065bb5;
+}
+.result-text {
+  font-size: 16px;
+  font-family: 'Rboto';
+  color: #475569;
+}

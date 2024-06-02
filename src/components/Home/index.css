@@ -1,0 +1,131 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.home-image {
+  margin-top: 10px;
+  height: 150px;
+  width: 150px;
+}
+.loader {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.home-page {
+  flex-grow: 1;
+  background-image: linear-gradient(
+    to right,
+    #dbbcc4,
+    #f3dfd8,
+    #c4d8bf,
+    #b7b1d5
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.home-page-content {
+  background-color: #f5fff4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 85%;
+  max-height: 798px;
+  width: 90%;
+  max-width: 1146px;
+}
+.home-heading {
+  color: #0ea5e9;
+  font-family: 'Roboto';
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+}
+@media screen and (min-width: 768px) {
+  .home-heading {
+    font-size: 24px;
+    font-weight: semi bold;
+  }
+}
+.home-description {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 12px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .home-description {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home-description {
+    font-size: 22px;
+  }
+}
+.start-button {
+  background-color: #0ea5e9;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .start-button {
+    font-size: 18px;
+    padding: 14px 22px;
+  }
+}
+.warning-image {
+  height: 18px;
+  width: 18px;
+  margin-right: 10px;
+}
+.warning-text {
+  color: #d97706;
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+.warning-container {
+  background-color: #fef3c7;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .start-button {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+  .home-image {
+    height: 340px;
+    width: 482px;
+  }
+  .warning-image {
+    height: 30px;
+    width: 30px;
+  }
+  .warning-text {
+    font-size: 16px;
+  }
+}

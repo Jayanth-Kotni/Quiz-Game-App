@@ -1,0 +1,187 @@
+/* Existing CSS code */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.quiz-page {
+  flex-grow: 1;
+  background-image: linear-gradient(
+    to right,
+    #dbbcc4,
+    #f3dfd8,
+    #c4d8bf,
+    #b7b1d5
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto';
+}
+.quiz-page-content {
+  background-color: #f5fff4;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 85%;
+  max-height: 798px;
+  width: 90%;
+  max-width: 1146px;
+  position: relative; /* Added to position next button at bottom right */
+}
+.question-time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Added margin to separate from the question */
+}
+.number-container {
+  background-color: #d2a7b3;
+  border-radius: 8px;
+  height: 100px;
+  width: 150px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.q-text {
+  font-size: 18px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.question-number {
+  color: #ffff;
+  font-size: 40px;
+  margin-top: 1px;
+  font-weight: normal;
+}
+.time-container {
+  border-color: rgb(0, 132, 255);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+.question-container {
+  align-self: flex-start; /* Align the question to the left */
+  margin-bottom: 20px; /* Add margin between question and options */
+}
+.question-text {
+  font-size: 24px;
+}
+
+.question-submit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Align options to the right */
+  flex-wrap: wrap;
+  width: 150px;
+  gap: 20px;
+}
+
+.option-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px; /* Adjusted width for options */
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #cdcdcd;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.option.correct {
+  background-color: green;
+}
+.option.incorrect {
+  background-color: red;
+}
+.option-image {
+  height: 50px;
+  width: 170px;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+.option-icon {
+  position: absolute;
+  right: -35px; /* Adjust the position of the icon */
+  height: 32px;
+  width: 32px;
+}
+
+.fail-image {
+  height: 364px;
+  width: 677px;
+}
+.fail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fail-head {
+  font-size: 36px;
+  color: #334155;
+}
+.fail-text {
+  font-size: 16px;
+  color: #64748b;
+}
+.loader {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-btn {
+  position: absolute;
+  bottom: 20px; /* Position at the bottom */
+  right: 20px; /* Position at the bottom right */
+  background-color: #0ea5e9;
+  color: #ffff;
+  font-size: 14px;
+  padding: 8px 20px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.single-select .option {
+  width: auto; /* Allow single select options to adjust width */
+  background-color: transparent; /* Remove background color */
+}
+.single-select .option.correct,
+.single-select .option.incorrect {
+  background-color: transparent; /* Keep background transparent */
+}
