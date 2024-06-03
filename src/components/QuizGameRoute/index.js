@@ -180,12 +180,12 @@ const QuizGameRoute = () => {
             const showIcon = isSelected
             return (
               <li key={option.id} className={`option-container ${optionClass}`}>
+                <span>{`${String.fromCharCode(65 + index)}. `}</span>
                 <button
                   className={`option ${optionClass}`}
                   onClick={() => handleAnswerSelection(option.id)}
                   type="button"
                 >
-                  <span>{`${String.fromCharCode(65 + index)}. `}</span>
                   {option.text}
                   {showIcon && (
                     <img
